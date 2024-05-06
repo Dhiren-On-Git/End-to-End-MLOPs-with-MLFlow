@@ -22,8 +22,7 @@ class ModelTrainerTrainingPipeline:
             raise e
             
         
-if __name__ == '__main__':
-    if STAGE_STATUS_FLAG == True:
+if __name__ == '__main__':    
         try:
             logger.info(f'>>>>>stage {STAGE_NAME} started <<<<< ')
             obj = ModelTrainerTrainingPipeline()
@@ -32,6 +31,5 @@ if __name__ == '__main__':
         except Exception as e:
             logger.exception(e)
             raise e
-    else:
-        logger.info(f'Your data schema is not valid!!! Correct the data before transforming the data!')
+    
         
