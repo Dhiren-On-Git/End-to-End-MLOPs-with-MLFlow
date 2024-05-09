@@ -1,3 +1,13 @@
+# ElasticNet:
+#   alpha: 0.4
+#   l1_ratio: 0.5
+
+# ElasticNet:
+#   alpha: 0.9
+#   l1_ratio: 0.7
+
+
+# Below is the best parameter from the three experiments with different parameters
 ElasticNet:
-  alpha: 0.2
-  l1_ratio: 0.1
+  alpha: 0.1
+  l1_ratio: 0.2
