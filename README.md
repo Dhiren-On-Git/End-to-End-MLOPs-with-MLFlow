@@ -114,7 +114,7 @@ export MLFLOW_TRACKING_PASSWORD=fa729f0bdbaa44598fff07244c5834b1598d3352
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/mlproj
+    - Save the URI: 992382407600.dkr.ecr.ap-southeast-2.amazonaws.com/mlops_wine_quality
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -139,6 +139,7 @@ export MLFLOW_TRACKING_PASSWORD=fa729f0bdbaa44598fff07244c5834b1598d3352
 	newgrp docker
 	
 # 6. Configure EC2 as self-hosted runner:
+	(To do the same open the git hub project repostiory in a new browser tab) 
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
 
 
@@ -148,11 +149,10 @@ export MLFLOW_TRACKING_PASSWORD=fa729f0bdbaa44598fff07244c5834b1598d3352
 
     AWS_SECRET_ACCESS_KEY=
 
-    AWS_REGION = us-east-1
+    AWS_REGION = ap-southeast-2
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
-
-    ECR_REPOSITORY_NAME = simple-app
+    AWS_ECR_LOGIN_URI = demo>>  992382407600.dkr.ecr.ap-southeast-2.amazonaws.com
+    ECR_REPOSITORY_NAME = mlops_wine_quality
 
 
 
